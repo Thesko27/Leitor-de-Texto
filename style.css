@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b75aa;
+    min-height: 80vh;
+}
+.container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgb(2, 25, 88) 0px 3px 8px;
+}
+
+.container h1 {
+    color: #0b75aa;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.container textarea {
+    height: 120px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    border: 3px solid #0b75aa;
+    transition: all 0.5s;
+    animation: border 0.8s infinite ease-in-out;
+}
+@keyframes border {
+    0% {
+        border: 3px solid #0b75aa;
+    }
+    20% {
+        border: 3px solid #faa72a;
+    }
+    40% {
+        border: 3px solid #fbbd42;
+    }
+    60% {
+        border: 3px solid #fdd35b;
+    }
+    80% {
+        border: 3px solid #fee973;
+    }
+    100% {
+        border: 3px solid #ffff8b;
+    }
+}
+.equali {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.container button {
+    display: inline-block;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    background-color: #0b75aa;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 8px;
+}
+button:hover {
+    background-color: #2391c8;
+    color: #0b75aa;
+}
+
+@media (max-width: 600px) {
+    body,
+    .container {
+        width: 75%;
+        transition: all 0.5s;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        margin: 20px;
+        width: 100%;
+    }
+}
